@@ -11,6 +11,13 @@ this library as follows:
 Replace ``CHANNEL_ID_HERE`` from [example.Jenkinsfile](./example.Jenkinsfile) with
 real chat id.
 
+## Notes on production usage
+
+Global pipeline libraries has full permissions on your Jenkins instance. 
+For production use create a fork and use tag (i.e., v1.0):
+
+![production](./production_sample.jpg)
+
 ## See also
 
 1. [Official Yandex Bot documentation](https://botapi.messenger.yandex.net/docs/)
