@@ -2,6 +2,6 @@ node {
     @Library('yandexbot-jenkins-notifications') _
     
     stage('test') {
-        yandexBot.send("chat_id", "test")
+        yandexBot.send("CHANNEL_ID_HERE", "test")
     }
 }
