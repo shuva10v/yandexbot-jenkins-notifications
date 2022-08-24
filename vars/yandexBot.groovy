@@ -1,8 +1,8 @@
-def YANDEX_BOT_URL = "https://botapi.messenger.yandex.net/bot/v1/messages/sendText/"
-def BOT_TOKEN_CREDNTIALS_ID = "yandexbot_token"
 import groovy.json.JsonBuilder
 
-def send(chat_id, message, botUrl=YANDEX_BOT_URL, credentialsId=BOT_TOKEN_CREDNTIALS_NAME) {
+def send(chat_id, message,
+         botUrl="https://botapi.messenger.yandex.net/bot/v1/messages/sendText/",
+         credentialsId="yandexbot_token") {
   println("Sending yandex bot message: ${message}")
   withCredentials([string(credentialsId: credentialsName, variable: 'YANDEX_BOT_TOKEN')]) {
     def request = [
